@@ -1,0 +1,41 @@
+$black: #000;
+$white: #fff;
+$grey: #999;
+$grey-light: #f6f6f6;
+$green: #1abc9c;
+$transparent: transparent;
+
+$mainColor: $green;
+
+$pad: 15px;
+$pad-txt: 30px;
+$pad-section: 70px;
+$pad-nav: 20px;
+
+$title-border-w: 20px;
+
+$mobile: 768px;
+
+%text-bold{
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+%position{
+	position: relative;
+	&::before{
+		content: "";
+		position: absolute;
+		top: 100%;
+		width: $title-border-w;
+		height: 2px;
+		margin-top: 5px;
+		background-color: $black;
+	}
+}
+
+@mixin rwd($device){
+	@media screen and (max-width: $device){
+		@content;
+	}
+}

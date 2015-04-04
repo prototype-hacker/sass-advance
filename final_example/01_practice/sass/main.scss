@@ -1,0 +1,148 @@
+$grid-gutter-width: 30px;
+// $grid-columns: 12;
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500);
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/layout";
+
+@import "bootstrap";
+@import "variable";
+
+
+
+
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+a{
+	@include link-colors($black ,$mainColor);
+}
+img{
+	width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+	@extend %text-bold;
+}
+h2{font-size: 56px;}
+h3{font-size: 24px;}
+h4{font-size: 19px;text-transform: lowercase;}
+h5{font-size: 15px;}
+p{font-size: 14px; color: $grey;line-height: 1.6;}
+
+
+
+
+
+.nav-weapper{
+	position: absolute;
+	width: 100%;
+	.navbar-default{
+		padding-top: $pad-nav;
+		background-color: $transparent;
+		border-color: $transparent;
+		@include rwd($mobile){
+			background-color: $white;
+			padding: $pad-nav/4 0;
+		}
+		li{
+			line-height: image-height('logo.png');
+			padding-right: $pad-nav;
+			padding-left: $pad-nav;
+			a{
+				color: $black;
+				@extend %text-bold;
+			}
+		}
+	}
+	.navbar-nav{
+		@include rwd($mobile){
+			display: none;
+		}
+	}
+}
+#logo{
+	@include replace-text-with-dimensions('logo.png');
+	@include rwd($mobile){
+		background-size: 80%;
+	}
+}
+
+.banner{
+	width: 100%;
+	height: 650px;
+	padding-top: 250px;
+	background: image-url('banner.jpg') center 0px no-repeat;
+}
+
+
+
+/*
+******** MODULE
+*/
+
+.polaroid{
+	padding: $pad;
+	background-color: $white;
+}
+
+.title{
+	margin-bottom: $pad-txt;
+	@extend %text-bold;
+	@extend %position;
+	&::before{
+		.is-center &{
+			left: calc(50% - #{$title-border-w}/2);
+		}
+	}
+}
+
+.description{
+	margin-bottom: $pad-txt + 10px;
+}
+.is-center{
+	text-align: center;
+}
+
+.is-bg{
+	background-color: $grey-light;
+}
+.is-noPad{
+	div{
+		padding-top: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+.btn{
+	padding: 10px $pad;
+	border-color: $black;
+	cursor: pointer;
+	@extend %text-bold;
+	@include border-radius(5px);
+	@include contrasted($white);
+	&:hover{
+		@include contrasted($mainColor);
+	}
+}
+
+
+
+
+.section{
+	padding: $pad-section $pad-txt;
+}
+#footer{
+	padding: $pad;
+	color: $white;
+	background-color: #262626;
+	text-align: center;
+	
+}
+@include sticky-footer(52px);
+
+//fix plugins
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	border-width: 0;
+}

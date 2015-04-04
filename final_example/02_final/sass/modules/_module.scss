@@ -1,0 +1,104 @@
+//header
+.nav-weapper{
+
+	
+	.navbar-default{
+		padding-top: $pad-nav;
+		background-color: $transparent;
+		border-color: $transparent;
+		@include rwd($mobile){
+			background-color: $white;
+			padding: $pad-nav/4 0;
+		}
+		li{
+			line-height: image-height('logo.png');
+			padding-right: $pad-nav;
+			padding-left: $pad-nav;
+			a{
+				color: $black;
+				@extend %text-bold;
+			}
+		}
+	}
+	@if $Menu==left{
+		position: fixed;
+		z-index: 10;
+		background-color: rgba($white, 0.5);
+		.navbar{
+			.container{
+				width: 200px;
+			}
+		}
+		.navbar-header{
+			display: none;
+		}
+		.nav{
+			width: 100px;
+			float: none !important;
+		}
+	}@else{
+		position: absolute;
+		width: 100%;
+	}
+	.navbar-nav{
+		@include rwd($mobile){
+			display: none;
+		}
+	}
+}
+#logo{
+	@include replace-text-with-dimensions('logo.png');
+	@include rwd($mobile){
+		background-size: 80%;
+	}
+}
+
+.banner{
+	width: 100%;
+	height: 650px;
+	padding-top: 250px;
+	background: image-url('banner.jpg') center 0px no-repeat;
+	h2{
+		color: $mainColor;
+	}
+}
+
+
+//content
+.polaroid{
+	padding: $pad;
+	background-color: $white;
+}
+
+.title{
+	margin-bottom: $pad-txt;
+	@extend %text-bold;
+	@extend %position;
+	&::before{
+		.is-center &{
+			left: calc(50% - #{$title-border-w}/2);
+		}
+	}
+}
+
+.description{
+	margin-bottom: $pad-txt + 10px;
+	color: $mainColor;
+}
+
+
+//skin
+.is-center{
+	text-align: center;
+}
+
+.is-bg{
+	background-color: $grey-light;
+}
+.is-noPad{
+	div{
+		padding-top: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

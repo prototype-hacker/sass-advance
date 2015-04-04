@@ -1,0 +1,12 @@
+/* line 1, ../sass/main.scss */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 7, ../sass/main.scss */
+.list-item {
+  float: left;
+  margin-left: 10px;
+}

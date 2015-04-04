@@ -1,0 +1,26 @@
+// @import "compass/reset";
+@import "compass/utilities/color/contrast";
+$fontSize: 14px !default;
+$btnColor: #2980b9 !default;
+
+
+
+
+.btn{
+	text-align: center;
+	font-size: $fontSize;
+	@include contrasted($btnColor);
+	display: inline-block;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+
+
+
+.btn-disable{
+	
+}
+.btn-active{
+
+}

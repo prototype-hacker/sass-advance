@@ -1,0 +1,11 @@
+.btn{
+	padding: 10px $pad;
+	border-color: $black;
+	cursor: pointer;
+	@extend %text-bold;
+	@include border-radius(5px);
+	@include contrasted($mainColor);
+	&:hover{
+		@include contrasted($mainColor);
+	}
+}

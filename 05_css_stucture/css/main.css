@@ -1,0 +1,182 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.btn {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 7px 15px;
+  border: 1px solid;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: transparent;
+}
+
+.pic-text-top, .pic-text-left {
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #999;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.pic-text-top img, .pic-text-left img {
+  width: 100%;
+}
+
+.before-wrapper .before-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+body {
+  font-size: 13px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.title {
+  text-transform: uppercase;
+}
+.title + .description {
+  margin-top: 10px;
+}
+
+.description {
+  color: #999;
+}
+
+.img + .content {
+  padding-top: 15px;
+}
+.pic-text-left .img {
+  padding-right: 15px;
+}
+
+.btn {
+  margin-top: 10px;
+  display: inline-block;
+}
+.btn:nth-of-type(2) {
+  margin-left: 10px;
+}
+.is-white .btn {
+  color: white;
+}
+
+.line {
+  margin: 10px auto;
+  width: 20px;
+  height: 2px;
+  background-color: #999;
+}
+
+.before-wrapper {
+  position: relative;
+}
+.before-wrapper .before-box {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.before-wrapper .before-box.bg-white {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.before-wrapper .before-outer {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.before-wrapper .before-inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.before-wrapper .before-inner .description {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.is-padding {
+  padding: 10px;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.is-white {
+  color: white;
+}
+
+.pic-text-top {
+  width: 300px;
+}
+.pic-text-top:hover .before-box {
+  display: block;
+}
+
+.pic-text-left {
+  width: 450px;
+}
+.pic-text-left .img {
+  width: 200px;
+  float: left;
+}

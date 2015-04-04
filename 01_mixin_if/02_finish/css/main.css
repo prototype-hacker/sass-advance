@@ -1,0 +1,43 @@
+.box {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px;
+  border-color: transparent;
+  border-top-width: 0;
+  border-bottom-width: 75px;
+  border-bottom-color: green;
+}
+
+.box2 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px;
+  border-color: transparent;
+  border-right-width: 0;
+  border-left-width: 75px;
+  border-left-color: red;
+}
+
+.box3 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px;
+  border-color: transparent;
+  border-bottom-width: 0;
+  border-top-width: 75px;
+  border-top-color: orange;
+}
+
+.box4 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px;
+  border-color: transparent;
+  border-left-width: 0;
+  border-right-width: 75px;
+  border-right-color: black;
+}

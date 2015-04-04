@@ -1,0 +1,11 @@
+.section{
+	padding: $pad-section $pad-txt;
+}
+#footer{
+	padding: $pad;
+	color: $white;
+	background-color: #262626;
+	text-align: center;
+	
+}
+@include sticky-footer(52px);

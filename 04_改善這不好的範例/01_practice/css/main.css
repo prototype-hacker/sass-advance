@@ -1,0 +1,13 @@
+/* line 1, ../sass/main.scss */
+div#news ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* line 7, ../sass/main.scss */
+div#news li {
+  float: left;
+  height: 100px;
+  margin-left: 10px;
+}

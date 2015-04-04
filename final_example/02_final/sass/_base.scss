@@ -1,0 +1,18 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+a{
+	@include link-colors($black ,$mainColor);
+}
+img{
+	width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+	@extend %text-bold;
+}
+h2{font-size: 56px;}
+h3{font-size: 24px;}
+h4{font-size: 19px;text-transform: lowercase;}
+h5{font-size: 15px;}
+p{font-size: 14px; color: $grey;line-height: 1.6;}
+

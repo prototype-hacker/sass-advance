@@ -1,0 +1,39 @@
+.btn {
+  text-align: center;
+  font-size: 14px;
+  background-color: #2980b9;
+  color: #fff;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.btn-md {
+  padding: 12px 10px;
+  font-size: 15px;
+}
+.btn-lg {
+  padding: 14px 12px;
+  font-size: 20px;
+}
+.btn-xlg {
+  padding: 15px 14px;
+  font-size: 24px;
+}
+.btn-primary {
+  background-color: #2980b9;
+}
+.btn-info {
+  background-color: green;
+}
+.btn-error {
+  background-color: red;
+}
+
+.btn-disable {
+  opacity: 0.5;
+}
+
+.btn-active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}

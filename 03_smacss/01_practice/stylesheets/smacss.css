@@ -1,0 +1,18 @@
+/* line 1, ../sass/smacss.scss */
+.form {
+  width: 100%;
+}
+/* line 3, ../sass/smacss.scss */
+.form input {
+  width: 50%;
+}
+
+/* line 7, ../sass/smacss.scss */
+.form-constrained {
+  width: 80%;
+}
+
+/* line 10, ../sass/smacss.scss */
+.input-constrained {
+  width: 30%;
+}
